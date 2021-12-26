@@ -10,7 +10,7 @@ netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /V verbosestatus /T REG_DWORD /D 1 /F > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v AutoBat /t REG_SZ /d D:\a\Maybe_New\Maybe_New\auto.bat
-curl -O https://raw.githubusercontent.com/techiesneh/VPS/main/ps1/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/0x3l/Maybe_Bruh/main/ps1/DisablePasswordComplexity.ps1 > out.txt 2>&1
 net user User lookingforsus123122@@@5ha /add >nul
 net localgroup administrators User /add >nul
 net user User /active:yes >nul
