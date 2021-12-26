@@ -1,6 +1,6 @@
 Set-LocalUser -Name "User" -Password (ConvertTo-SecureString -AsPlainText "$PASSWORD" -Force)
 Get-LocalUser -Name "User" | Enable-LocalUser 
-Invoke-WebRequest https://raw.githubusercontent.com/0x3l/Maybe-Public/main/ngrok-stable-windows-amd64.zip
+Invoke-WebRequest https://raw.githubusercontent.com/0x3l/Maybe-Public/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 tar xf ngrok.zip
 Copy ngrok.exe C:\Windows\System32
 Start-Service -Name audiosrv
